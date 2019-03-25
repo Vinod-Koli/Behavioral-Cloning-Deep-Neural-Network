@@ -105,4 +105,4 @@ The model used an adam optimizer, so the learning rate was not tuned manually.
 * Loss Function Used- MSE(Mean Squared Error)
  
 ### Conclusion
-The model worked well on the track at all the times, and it was able to drive the car as expected.
+The model worked well on the track at all the times, and it was able to drive the car as expected. You can check the video [here](https://github.com/Vinod-Koli/CarND-Behavioral-Cloning/blob/master/run1.mp4)
