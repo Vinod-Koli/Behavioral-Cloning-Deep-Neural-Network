@@ -54,7 +54,7 @@ Correction factor has been added to the steering angles corresponding to the lef
 
 Input image looks like below
 
-<img src="./images/center_2016_12_01_13_32_53_357.jpg">
+<img src="./images/center_2016_12_01_13_30_48_287.jpg">
 
 ### Preprocessing
 
