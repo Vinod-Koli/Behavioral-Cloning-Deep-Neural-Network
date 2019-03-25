@@ -49,7 +49,7 @@ The model.py file contains the code for training and saving the convolution neur
 ### Loading Data 
 
 * I used the the dataset provided by Udacity
-* I am using OpenCV to load the images, by default the images are read by OpenCV in BGR format but we need to convert to RGB as in drive.py it is processed in RGB format.
+* I am using matplotlib to load the images, this loads the images in RGB format.
 * Since we have a steering angle associated with three images we introduce a correction factor for left and right images since the steering angle is captured by the center angle.
 * I decided to introduce a correction factor of 0.2
 * For the left images I increase the steering angle by 0.2 and for the right images I decrease the steering angle by 0.2
@@ -93,7 +93,6 @@ Cropped Image-
 * Next we define two convolutional layer with filter depth as 64 and filter size as (3,3) and (1,1) stride followed by ELU activation funciton
 * Next step is to flatten the output from 2D to side by side
 * Here we apply first fully connected layer with 100 outputs
-* Here is the first time when we introduce Dropout with Dropout rate as 0.25 to combact overfitting
 * Next we introduce second fully connected layer with 50 outputs
 * Then comes a third connected layer with 10 outputs
 * And finally the layer with one output.
@@ -102,14 +101,14 @@ Here we require one output just because this is a regression problem and we need
 
 
 ### Attempts to reduce overfitting in the model
-After the full connected layer I have used a dropout so that the model generalizes on a track that it has not seen. I decided to keep the Dropoout rate as 0.25 to combact overfitting.
+The model was working perfectly fine without dropouts. Since the model was not overfitting there was no need for dropout.
 
 ### Model parameter tuning
 
 * No of epochs= 5
 * Optimizer Used- Adam
 * Learning Rate- Default 0.001
-* Validation Data split- 0.15
+* Validation Data split- 0.20
 * Generator batch size= 32
 * Correction factor- 0.2
 * Loss Function Used- MSE(Mean Squared Error as it is efficient for regression problem).
