@@ -52,7 +52,9 @@ I have used the training data provided by Udacity along with some more data coll
 
 Correction factor has been added to the steering angles corresponding to the left(+0.2) and right(-0.2) camera images.
 
-<img src="./images/center_2016_12_01_13_30_48_287.jpg">
+Input image looks like below
+
+<img src="./images/center_2016_12_01_13_32_53_357.jpg">
 
 ### Preprocessing
 
@@ -77,9 +79,6 @@ Correction factor has been added to the steering angles corresponding to the lef
 <img src="./images/mymodel.PNG">
 
 The labda layer applies the normalization followed by 5 convolution layers as shown above.
-
-Sample Input Image-
-<img src="./images/center_2016_12_01_13_32_53_357.jpg">   
 
 
 * 1st convolutional layer with filter depth as 24 and kernel size (5,5) with (2,2) stride followed by `relu` activation function
