@@ -1,7 +1,5 @@
 # Udacity Self-Driving Car Engineer Nanodegree - Behavioral Cloning Project
 
-*My solution to the Udacity Self-Driving Car Engineer Nanodegree Behavioral Cloning project.*
-
 **Note: This project makes use of a Udacity-developed driving simulator and training data collected from the simulator (neither of which is included in this repo).**
 
 ---
@@ -77,7 +75,7 @@ The model.py file contains the code for training and saving the convolution neur
 
 * I made a little changes to the original NVIDIA architecture, my final architecture looks like in the image below
 
-<img src="./images/mymodel.JPG">
+<img src="./images/mymodel.PNG">
 
 * As it is clear from the model summary my first step is to apply normalization to the all the images.
 * Second step is to crop the image 70 pixels from top and 25 pixels from bottom. The image was cropped from top because I did not wanted to distract the model with trees and sky and 25 pixels from the bottom so as to remove the dashboard that is coming in the images.
